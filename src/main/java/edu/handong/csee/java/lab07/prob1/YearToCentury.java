@@ -10,16 +10,10 @@ import java.util.Scanner;
  */
 
 public class YearToCentury {
-	public int input_year() {
-		Scanner input =new Scanner(System.in);
-		System.out.println("Input year:");
-		int year = input.nextInt();
-		return year;
-	}
-	
-	public int cal_century() {
+		
+	public static int cal_century(int year) {
 		int century;
-		int yr=input_year();
+		int yr =  year;
 		if(yr%100 == 0) {
 			century = yr/100;
 		}
@@ -27,8 +21,11 @@ public class YearToCentury {
 		return century;
 	}
 	
-	public void print_century() {
-		System.out.print(input_year() + " is " +cal_century()+"th century");
+	public static void main(String[] args) {
+		Scanner input =new Scanner(System.in);
+		System.out.println("Input year:");
+		int year = input.nextInt();
+		int century = cal_century(year);
+		System.out.print(year+ " is " +century+"th century");
 	}
-
 }
