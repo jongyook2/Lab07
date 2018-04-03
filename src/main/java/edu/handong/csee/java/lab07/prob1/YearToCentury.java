@@ -2,7 +2,7 @@ package edu.handong.csee.java.lab07.prob1;
 import java.util.Scanner;
 
 /**
- * This class defines Buginfestation object.<br>
+ * This class defines YearToCentury object.<br>
  * 
  * 
  * @author YJW <br>
@@ -10,8 +10,13 @@ import java.util.Scanner;
  */
 
 public class YearToCentury {
+		int year;
 		
-	public static int cal_century(int year) {
+		public YearToCentury(int year) {
+			this.year=year;
+		}
+		
+	public int cal_century(int year) {
 		int century;
 		int yr =  year;
 		if(yr%100 == 0) {
@@ -25,7 +30,7 @@ public class YearToCentury {
 		Scanner input =new Scanner(System.in);
 		System.out.println("Input year:");
 		int year = input.nextInt();
-		int century = cal_century(year);
-		System.out.print(year+ " is " +century+"th century");
+		YearToCentury YTC = new YearToCentury(year);
+		System.out.print(year+ " is " +YTC.cal_century(year)+"th century");
 	}
 }
