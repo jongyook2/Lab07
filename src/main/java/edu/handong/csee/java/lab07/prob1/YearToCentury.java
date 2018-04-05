@@ -11,7 +11,7 @@ import java.util.Scanner; //import standard input from keyboard
 
 public class YearToCentury {
 	int year; //declare instance variable
-	
+
 	/**
 	 * This Constructor is used to initialize instance variable year<br>
 	 * parameter is int year <br>
