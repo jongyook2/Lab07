@@ -26,7 +26,7 @@ public class Chicken {
 	 * 
 	 */
 	public static void print_Menu(Chicken menu) {
-		System.out.println(menu.Name+"'s rating is "+menu.stars); //print menu.Name and menu.stars	
+		System.out.println(menu.getName()+"'s rating is "+menu.getStars()); //print menu.Name and menu.stars	
 	}
 	/**
 	 * This method is main <br>
@@ -37,12 +37,12 @@ public class Chicken {
 	 */	
 	public static void main(String[] args) {
 
-		Chicken menu1 = new Chicken("Cheese_mustard",16000.0 ,5 ); //instantiate Class Chicken to menu1("menu.Name", menu.Price, menu.stars)
-		Chicken menu2 = new Chicken("Honey_mustard",16000.0 ,3 ); //instantiate Class Chicken to menu2("menu.Name", menu.Price, menu.stars)
-		Chicken menu3 = new Chicken("Spicey_chicken",16000.0 ,3 ); //instantiate Class Chicken to menu3("menu.Name", menu.Price, menu.stars)
+		Chicken menu1 = new Chicken("Cheese_mustard",16000.0 ,3 ); //instantiate Class Chicken to menu1("menu.Name", menu.Price, menu.stars)
+		Chicken menu2 = new Chicken("Honey_mustard",16000.0 ,4 ); //instantiate Class Chicken to menu2("menu.Name", menu.Price, menu.stars)
+		Chicken menu3 = new Chicken("Spicey_chicken",16000.0 ,4 ); //instantiate Class Chicken to menu3("menu.Name", menu.Price, menu.stars)
 		menu1.setName("cheese cheese super_mustard"); //change menu1's name by setName method(setter)
 		menu2.setPrice(26000.0); //change menu2's Price by setPrice method(setter)
-		menu3.setStars(4); //change menu3's Stars by setStars method(setter)
+		menu3.setStars(1); //change menu3's Stars by setStars method(setter)
 		Chicken [] menu= {menu1, menu2, menu3}; // array instantiation to menu that has three Chicken instance(menu1,2,3) 
 		for(int i=0; i<3; i++) { //for loop (runs 3times)
 			print_Menu(menu[i]); //call print_Menu method, parameter is menu(array)

@@ -43,9 +43,9 @@ public class YearToCentury {
 	 * 
 	 */
 	public static void main(String[] args) {
-		Scanner input =new Scanner(System.in); //instantiate Class Scanner to input
+		Scanner Input =new Scanner(System.in); //instantiate Class Scanner to input
 		System.out.println("Input year:"); //output(Input year:) is shown in your monitor
-		int year = input.nextInt(); //year is input(int type) from keyboard
+		int year = Input.nextInt(); //year is input(int type) from keyboard
 		YearToCentury YTC = new YearToCentury(year); //instantiate Class YearToCentury to YTC
 		System.out.print(year+ " is " +YTC.cal_century(year)+"th century"); //output(YYYY is XXth century) is shown in your monitor
 	}
